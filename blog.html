@@ -3,69 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journal - St. Clair Design Co.</title>
+    <title>Journal - St. Clair Design</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body class="full-width-layout">
+<body class="split-layout">
 
-    <header class="site-header">
-        <div class="logo"><a href="index.html">St. Clair Design Co.</a></div>
-        <nav class="top-nav">
-            <a href="index.html">Home</a>
-            <a href="shop.html">Shop</a>
-            <a href="blog.html" class="active">Blog</a>
+    <aside class="left-pane">
+        <div class="brand-area"><a href="index.html" class="logo">St. Clair Design</a></div>
+        <nav class="side-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Assets</a></li>
+                <li><a href="blog.html" class="nav-link active">Journal</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
         </nav>
-    </header>
+    </aside>
 
-    <main class="padding-large container">
-        <div class="page-header fade-up">
-            <h1 class="headline">The Journal</h1>
-            <p class="body-text">Thoughts on design, technology, and the creative process.</p>
-        </div>
+    <main class="right-pane padding-large">
+        <div class="container">
+            <header class="fade-up" style="margin-bottom: 4rem;">
+                <h1 class="headline">The Journal</h1>
+                <p class="body-text">Thoughts on design, technology, and process.</p>
+            </header>
 
-        <div class="blog-list">
-            <article class="blog-post fade-up">
-                <div class="blog-img">
-                    <img src="images/blog-1.jpg" alt="Architecture">
-                </div>
-                <div class="blog-text">
-                    <span class="date">October 12, 2025</span>
-                    <h2>Why Minimalism Converts</h2>
-                    <p>Exploring the psychology behind whitespace and clear typography in modern web design.</p>
-                    <a href="blog-post-1.html" class="read-more">Read Story</a>
-                </div>
-            </article>
-
-            <article class="blog-post fade-up">
-                <div class="blog-img">
-                    <img src="images/blog-2.jpg" alt="Future Tech">
-                </div>
-                <div class="blog-text">
-                    <span class="date">September 28, 2025</span>
-                    <h2>The Future of Digital Identity</h2>
-                    <p>How brands are evolving to meet the needs of a privacy-focused generation.</p>
-                    <a href="blog-post-2.html" class="read-more">Read Story</a>
-                </div>
-            </article>
-            
-             <article class="blog-post fade-up">
-                <div class="blog-img">
-                    <img src="images/blog-3.jpg" alt="Sketching">
-                </div>
-                <div class="blog-text">
-                    <span class="date">September 15, 2025</span>
-                    <h2>From Sketch to Screen</h2>
-                    <p>A look inside our design process and how we move from paper concepts to code.</p>
-                    <a href="blog-post-3.html" class="read-more">Read Story</a>
-                </div>
-            </article>
+            <div class="blog-list">
+                <article class="blog-post fade-up">
+                    <div class="blog-img">
+                        <img src="images/blog-1.jpg" alt="Architecture">
+                    </div>
+                    <div class="blog-text">
+                        <span class="date" style="display:block; margin-bottom:0.5rem; color:#888; font-size:0.85rem; letter-spacing:1px; text-transform:uppercase;">Oct 12</span>
+                        <h2 style="font-size:2rem; margin-bottom:1rem;">Why Minimalism Converts</h2>
+                        <a href="blog-post-1.html" class="read-more" style="font-weight:600; border-bottom:1px solid #ccc;">Read Story</a>
+                    </div>
+                </article>
+                
+                <article class="blog-post fade-up">
+                    <div class="blog-img">
+                        <img src="images/blog-2.jpg" alt="Future">
+                    </div>
+                    <div class="blog-text">
+                        <span class="date" style="display:block; margin-bottom:0.5rem; color:#888; font-size:0.85rem; letter-spacing:1px; text-transform:uppercase;">Sep 28</span>
+                        <h2 style="font-size:2rem; margin-bottom:1rem;">Future of Identity</h2>
+                        <a href="blog-post-2.html" class="read-more" style="font-weight:600; border-bottom:1px solid #ccc;">Read Story</a>
+                    </div>
+                </article>
+            </div>
         </div>
     </main>
-
-    <footer class="site-footer">
-        <p>&copy; 2025 St. Clair Design Co.</p>
-    </footer>
 
     <script src="js/main.js"></script>
 </body>

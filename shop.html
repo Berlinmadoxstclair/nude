@@ -3,63 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - St. Clair Design Co.</title>
+    <title>Assets - St. Clair Design</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body class="full-width-layout">
+<body class="split-layout">
 
-    <header class="site-header">
-        <div class="logo"><a href="index.html">St. Clair Design Co.</a></div>
-        <nav class="top-nav">
-            <a href="index.html">Home</a>
-            <a href="shop.html" class="active">Shop</a>
-            <a href="blog.html">Blog</a>
+    <aside class="left-pane">
+        <div class="brand-area"><a href="index.html" class="logo">St. Clair Design</a></div>
+        <nav class="side-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link active">Assets</a></li>
+                <li><a href="blog.html" class="nav-link">Journal</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
         </nav>
-    </header>
+    </aside>
 
-    <main class="padding-large container">
-        <div class="page-header fade-up">
-            <h1 class="headline">Digital Assets</h1>
-            <p class="body-text">Premium resources for designers and developers.</p>
-        </div>
+    <main class="right-pane padding-large">
+        <div class="container">
+            <header class="fade-up" style="margin-bottom: 4rem;">
+                <h1 class="headline">Digital Assets</h1>
+                <p class="body-text">Premium resources for designers.</p>
+            </header>
 
-        <div class="shop-grid">
-            <div class="product-card fade-up">
-                <div class="img-holder">
-                    <img src="images/product-1.jpg" alt="UI Kit">
+            <div class="shop-grid">
+                <div class="product-card fade-up">
+                    <div class="img-holder">
+                        <img src="images/product-1.jpg" alt="UI Kit">
+                    </div>
+                    <div style="padding-top: 1rem; display: flex; justify-content: space-between;">
+                        <h3 style="font-size: 1.1rem;">UI Kit</h3>
+                        <span>$49</span>
+                    </div>
                 </div>
-                <div class="product-info">
-                    <h3>Minimalist UI Kit</h3>
-                    <span class="price">$49.00</span>
-                </div>
-            </div>
-
-            <div class="product-card fade-up" style="transition-delay: 0.1s;">
-                <div class="img-holder">
-                    <img src="images/product-2.jpg" alt="Icon Pack">
-                </div>
-                <div class="product-info">
-                    <h3>Linear Icon Pack</h3>
-                    <span class="price">$19.00</span>
-                </div>
-            </div>
-
-            <div class="product-card fade-up" style="transition-delay: 0.2s;">
-                <div class="img-holder">
-                    <img src="images/product-3.jpg" alt="Mockups">
-                </div>
-                <div class="product-info">
-                    <h3>Stationery Mockups</h3>
-                    <span class="price">$35.00</span>
+                <div class="product-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="img-holder">
+                        <img src="images/product-2.jpg" alt="Icons">
+                    </div>
+                    <div style="padding-top: 1rem; display: flex; justify-content: space-between;">
+                        <h3 style="font-size: 1.1rem;">Icons</h3>
+                        <span>$19</span>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-
-    <footer class="site-footer">
-        <p>&copy; 2025 St. Clair Design Co.</p>
-    </footer>
 
     <script src="js/main.js"></script>
 </body>
